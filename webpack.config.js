@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
- entry: './src/playground/setVariableCopy.js',
+ entry: './src/playground/conditionalPageCopy.js',
  output: {
      path: path.join(__dirname, 'public'),
      filename: 'bundle.js'
