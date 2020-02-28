@@ -7,7 +7,7 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack --watch",
-    "build-script": "babel src/playground/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "build-script": "babel src/playground/setVariableCopy.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
@@ -19,8 +19,10 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "live-server": "^1.2.1",
+    "lodash": "^4.17.15",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
+    "ramda": "^0.27.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.1",
     "react-modal": "^2.2.2",
@@ -28,6 +30,7 @@
     "redux": "^3.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "uuid": "^3.1.0",
     "validator": "^8.0.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
