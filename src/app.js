@@ -14,14 +14,14 @@ const store = configureStore()
 console.log(store.getState())
 
 store.dispatch(addExpense({description: 'Water Bill', amount: 544400}));
-store.dispatch(addExpense({description: 'Gas Bill', amount: 6600, createdAt: 1542633}));
+store.dispatch(addExpense({description: 'Gas Bill', amount: 6600, createdAt: 1583135282}));
 store.dispatch(addExpense({description: 'Rent', amount: 19500}));
 
-store.dispatch(setTextFilter('WATER'));
-
-setTimeout(() => {
-  store.dispatch(setTextFilter('bill'))
-},3000)
+// store.dispatch(setTextFilter('WATER'));
+//
+// setTimeout(() => {
+//   store.dispatch(setTextFilter('bill'))
+// },3000)
 
 const state = store.getState()
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
