@@ -33,3 +33,24 @@ test('should render expenseListFilters with altFilters', () => {
   });
   expect(wrapper).toMatchSnapshot();
 });
+
+//  (spies)
+test ('should handle text change', () => {
+
+});
+//  (spies)
+test ('should sort by date', () => {
+
+});
+//  (spies)
+test ('should sort by amount', () => {
+
+});
+//  (spies)
+test ('should handle date changes', () => {
+
+});
+//  (assert state, simulate change on e.target)
+test ('should handle date focus changes', () => {
+
+});
